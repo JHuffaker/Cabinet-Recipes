@@ -17,7 +17,8 @@ struct Cabinet_RecipesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RecipesTabView()
+                .environmentObject(RecipesData())
         }
     }
 }

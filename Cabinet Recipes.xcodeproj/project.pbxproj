@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		B445BF4A265D9D1C00539A0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B445BF49265D9D1C00539A0B /* Assets.xcassets */; };
 		B445BF4D265D9D1C00539A0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B445BF4C265D9D1C00539A0B /* Preview Assets.xcassets */; };
 		B445BF55265DA2CC00539A0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B445BF54265DA2CC00539A0B /* GoogleService-Info.plist */; };
+		B455DD172661CFD7007174F0 /* RecipesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455DD162661CFD7007174F0 /* RecipesListView.swift */; };
+		B455DD382662FDE2007174F0 /* RecipesTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455DD372662FDE2007174F0 /* RecipesTabView.swift */; };
+		B455DD3A26632C0B007174F0 /* RecipesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455DD3926632C0B007174F0 /* RecipesData.swift */; };
+		B455DD57266823AA007174F0 /* RecipesDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B455DD56266823AA007174F0 /* RecipesDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B445BF4C265D9D1C00539A0B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B445BF4E265D9D1C00539A0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B445BF54265DA2CC00539A0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B455DD162661CFD7007174F0 /* RecipesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListView.swift; sourceTree = "<group>"; };
+		B455DD372662FDE2007174F0 /* RecipesTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesTabView.swift; sourceTree = "<group>"; };
+		B455DD3926632C0B007174F0 /* RecipesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesData.swift; sourceTree = "<group>"; };
+		B455DD56266823AA007174F0 /* RecipesDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +54,6 @@
 				0DC1B80C9CB7D171D6564C61 /* Pods-Cabinet Recipes.debug.xcconfig */,
 				2D10680CB56C182265F41367 /* Pods-Cabinet Recipes.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,11 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				B445BF45265D9D1600539A0B /* Cabinet_RecipesApp.swift */,
+				B455DD372662FDE2007174F0 /* RecipesTabView.swift */,
+				B455DD162661CFD7007174F0 /* RecipesListView.swift */,
+				B455DD3926632C0B007174F0 /* RecipesData.swift */,
 				B445BF47265D9D1600539A0B /* ContentView.swift */,
 				B445BF49265D9D1C00539A0B /* Assets.xcassets */,
 				B445BF54265DA2CC00539A0B /* GoogleService-Info.plist */,
 				B445BF4E265D9D1C00539A0B /* Info.plist */,
 				B445BF4B265D9D1C00539A0B /* Preview Content */,
+				B455DD56266823AA007174F0 /* RecipesDescriptionView.swift */,
 			);
 			path = "Cabinet Recipes";
 			sourceTree = "<group>";
@@ -211,7 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B455DD382662FDE2007174F0 /* RecipesTabView.swift in Sources */,
+				B455DD57266823AA007174F0 /* RecipesDescriptionView.swift in Sources */,
 				B445BF48265D9D1600539A0B /* ContentView.swift in Sources */,
+				B455DD3A26632C0B007174F0 /* RecipesData.swift in Sources */,
+				B455DD172661CFD7007174F0 /* RecipesListView.swift in Sources */,
 				B445BF46265D9D1600539A0B /* Cabinet_RecipesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
