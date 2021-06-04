@@ -87,15 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				B445BF45265D9D1600539A0B /* Cabinet_RecipesApp.swift */,
+				B455DD3926632C0B007174F0 /* RecipesData.swift */,
+				B455DD56266823AA007174F0 /* RecipesDescriptionView.swift */,
 				B455DD372662FDE2007174F0 /* RecipesTabView.swift */,
 				B455DD162661CFD7007174F0 /* RecipesListView.swift */,
-				B455DD3926632C0B007174F0 /* RecipesData.swift */,
 				B445BF47265D9D1600539A0B /* ContentView.swift */,
 				B445BF49265D9D1C00539A0B /* Assets.xcassets */,
 				B445BF54265DA2CC00539A0B /* GoogleService-Info.plist */,
 				B445BF4E265D9D1C00539A0B /* Info.plist */,
 				B445BF4B265D9D1C00539A0B /* Preview Content */,
-				B455DD56266823AA007174F0 /* RecipesDescriptionView.swift */,
 			);
 			path = "Cabinet Recipes";
 			sourceTree = "<group>";

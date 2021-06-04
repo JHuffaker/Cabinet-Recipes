@@ -7,20 +7,28 @@
 
 import SwiftUI
 import Firebase
+import FirebaseFirestoreSwift
 
 struct RecipesListView: View {
     
     @EnvironmentObject var data: RecipesData
-    @State var counter = 0
     
     var body: some View {
         
         NavigationView {
             List(data.recipes) { recipe in
-                Text(recipe.name)
+                NavigationLink(
+                    destination:
+//                        RecipesDescriptionView(recipe: recipe),
+                        Text("hello"),
+                    label: {
+//                        Text(recipe.name)
+                        Text("Recipe name")
+                    })
             }
             .navigationBarTitle("Recipes")
         }
+//        Text("Hello?")
     }
 }
 
