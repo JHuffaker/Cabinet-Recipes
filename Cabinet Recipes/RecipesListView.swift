@@ -18,17 +18,24 @@ struct RecipesListView: View {
         NavigationView {
             List(data.recipes) { recipe in
                 NavigationLink(
-                    destination:
-//                        RecipesDescriptionView(recipe: recipe),
-                        Text("hello"),
-                    label: {
-//                        Text(recipe.name)
-                        Text("Recipe name")
-                    })
+                    destination: RecipesDescriptionView(recipe: recipe),
+                            label: {
+                                Text(recipe.name)
+                            }
+                )
             }
             .navigationBarTitle("Recipes")
+            .navigationBarItems(trailing: NavigationLink(destination: AddRecipeView()) {
+                Image(systemName: "plus")
+                    .resizable()
+                    .padding(6)
+                    .frame(width: 32, height: 32)
+                    .background(Color.blue)
+                    .clipShape(Circle())
+                    .foregroundColor(.white)
+                }
+            )
         }
-//        Text("Hello?")
     }
 }
 
