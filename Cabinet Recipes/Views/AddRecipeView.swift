@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct AddRecipeView: View {
     @State var recipeName = ""
     @State var ingredients = ""
     @State var directions = ""
-    
-    @State var counter = 0
-    
+    @Environment(\.presentationMode) var presentationMode
+        
     var body: some View {
         NavigationView {
             Form {
@@ -39,6 +39,17 @@ struct AddRecipeView: View {
             )
         }
     }
+    
+    func addRecipe(name: String, directions: [String], ingredients: [String]) {
+        
+        let db = Firestore.firestore()
+        
+        let collectionName = db.collection("sub recipes")
+        collectionName.addDocument(data: ["name": name, "directions": directions, "ingredients": ingredients])
+        
+        presentationMode.wrappedValue.dismiss()
+    }
+    
 }
 
 struct AddRecipeView_Previews: PreviewProvider {

@@ -11,6 +11,7 @@ import Firebase
 struct RecipesDescriptionView: View {
     var recipe: Recipe
     @State private var deleteAlert = false
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
 
@@ -86,6 +87,7 @@ struct RecipesDescriptionView: View {
                 return
             }
         }
+        presentationMode.wrappedValue.dismiss()
     }
 }
 

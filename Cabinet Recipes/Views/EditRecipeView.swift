@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 struct EditRecipeView: View {
     var recipe: Recipe
     @State var newName = ""
     @State var newIngredients = [String]()
     @State var newDirections = [String]()
+    @Environment(\.presentationMode) var presentationMode
     
     init(recipe: Recipe) {
         self.recipe = recipe
@@ -46,6 +48,16 @@ struct EditRecipeView: View {
             })
             )
         }
+    }
+    
+    func editRecipe(name: String, directions: [String], ingredients: [String], docName: String) {
+        
+        let db = Firestore.firestore()
+        
+        let documentName = db.collection("sub recipes").document(docName)
+        documentName.setData(["name": name, "directions": directions, "ingredients": ingredients])
+        
+        presentationMode.wrappedValue.dismiss()
     }
 }
 
