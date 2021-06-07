@@ -12,7 +12,7 @@ For my database, I decided to use Firestore, part of Google Firebase. The databa
 
 # Development Environment
 
-* XCode 12
+* Xcode 12
 * Swift 5.4
 * SwiftUI
 * Cocoapods
