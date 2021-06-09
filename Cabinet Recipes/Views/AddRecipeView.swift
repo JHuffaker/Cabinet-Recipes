@@ -21,15 +21,15 @@ struct AddRecipeView: View {
                     TextField("Recipe name", text: $recipeName)
                 }
                 Section {
-                    TextField("Ingredients", text: $ingredients)
+                    TextField("add ingredient", text: $ingredients)
                 }
                 Section {
-                    TextField("Directions", text: $directions)
+                    TextField("add instruction", text: $directions)
                 }
             }.navigationBarTitle("Add Recipe")
             .navigationBarItems(trailing: NavigationLink(destination: RecipesListView()) {
                 Text("Save")
-                    .padding(20)
+                    .padding(5)
                     .foregroundColor(.blue)
             }.simultaneousGesture(TapGesture().onEnded{
                 let directionsList = directions.components(separatedBy: ".")
