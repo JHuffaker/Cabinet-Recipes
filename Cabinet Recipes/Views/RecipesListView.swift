@@ -25,16 +25,17 @@ struct RecipesListView: View {
                 )
             }
             .navigationBarTitle("Recipes")
-            .navigationBarItems(trailing: NavigationLink(destination: AddRecipeView()) {
+            .navigationBarItems(leading: NavigationLink(destination: AddRecipeView()) {
                 Image(systemName: "plus")
                     .resizable()
-                    .padding(6)
+                    .padding(4)
                     .frame(width: 32, height: 32)
-                    .background(Color.blue)
-                    .clipShape(Circle())
-                    .foregroundColor(.white)
-                }
-            )
+                }, trailing: NavigationLink(destination: SettingsView()) {
+                    Image(systemName: "gear")
+                        .resizable()
+                        .padding(4)
+                        .frame(width: 32, height: 32)
+                    })
         }
     }
 }

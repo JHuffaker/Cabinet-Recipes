@@ -11,6 +11,7 @@ import FirebaseFirestore
 struct AddRecipeView: View {
     @State var recipeName = ""
     @State var ingredients = ""
+    @State var ingredientsList = [String]()
     @State var directions = ""
     @Environment(\.presentationMode) var presentationMode
         
