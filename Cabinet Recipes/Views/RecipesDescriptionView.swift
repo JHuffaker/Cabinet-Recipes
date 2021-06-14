@@ -59,12 +59,6 @@ struct RecipesDescriptionView: View {
                                         self.deleteAlert = true
                             }
                             Spacer()
-//                            Button("Edit") {
-//                                EditRecipeView(recipe: recipe)
-//                            }
-//                            NavigationLink(destination: EditRecipeView(recipe: recipe)) {
-//                                Text("Edit")
-//                            }
                         }
                     }.alert(isPresented: $deleteAlert) {
                         Alert(title: Text("Are you sure you want to delete this?"), message: Text("You will not be able to undo this action"), primaryButton: .destructive(Text("Delete")) {

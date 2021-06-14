@@ -16,26 +16,29 @@ struct RecipesListView: View {
     var body: some View {
         
         NavigationView {
-            List(data.recipes) { recipe in
-                NavigationLink(
-                    destination: RecipesDescriptionView(recipe: recipe),
+            ScrollView {
+                LazyVStack {
+                    ForEach(data.recipes) { recipe in
+                        NavigationLink(
+                            destination: RecipesDescriptionView(recipe: recipe),
                             label: {
-                                Text(recipe.name)
-                            }
-                )
-            }
-            .navigationBarTitle("Recipes")
-            .navigationBarItems(leading: NavigationLink(destination: AddRecipeView()) {
-                Image(systemName: "plus")
-                    .resizable()
-                    .padding(4)
-                    .frame(width: 32, height: 32)
-                }, trailing: NavigationLink(destination: SettingsView()) {
-                    Image(systemName: "gear")
-                        .resizable()
-                        .padding(4)
-                        .frame(width: 32, height: 32)
+                                CardView(recipe: recipe)
+                            })
+                    }
+                    .navigationBarTitle("Recipes")
+                    .navigationBarItems(leading: NavigationLink(destination: AddRecipeView()) {
+                        Image(systemName: "plus")
+                            .resizable()
+                            .padding(4)
+                            .frame(width: 32, height: 32)
+                        }, trailing: NavigationLink(destination: SettingsView()) {
+                            Image(systemName: "gear")
+                                .resizable()
+                                .padding(4)
+                                .frame(width: 32, height: 32)
                     })
+                }
+            }
         }
     }
 }
