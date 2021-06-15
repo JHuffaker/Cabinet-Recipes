@@ -17,7 +17,8 @@ struct RecipesListView: View {
         
         NavigationView {
             ScrollView {
-                LazyVStack {
+                VStack {
+                    Spacer()
                     ForEach(data.recipes) { recipe in
                         NavigationLink(
                             destination: RecipesDescriptionView(recipe: recipe),
