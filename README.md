@@ -4,7 +4,7 @@ The purpose of this application is to continue to increase my skills in Swift an
 
 The app displays a list of recipes that the user has created. It gives the user the option to look at the recipes, edit them, delete them, and add additional recipes.
 
-[Software Demo Video](https://youtu.be/CwOi1-teah4)
+[Software Demo Video](https://youtu.be/UPMWCvLpi6s)
 
 # Cloud Database
 
