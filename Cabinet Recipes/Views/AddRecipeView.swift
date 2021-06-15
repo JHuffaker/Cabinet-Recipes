@@ -29,12 +29,12 @@ struct AddRecipeView: View {
                 }
             }.navigationBarTitle("Add Recipe")
             .navigationBarItems(trailing: NavigationLink(destination: RecipesListView()) {
-                Text("Save")
+                Text("Create")
                     .padding(5)
                     .foregroundColor(.blue)
             }.simultaneousGesture(TapGesture().onEnded{
-                let directionsList = directions.components(separatedBy: ".")
-                let ingredientsList = ingredients.components(separatedBy: ".")
+                let directionsList = directions.components(separatedBy: ". ")
+                let ingredientsList = ingredients.components(separatedBy: ". ")
                 addRecipe(name: recipeName, directions: directionsList, ingredients: ingredientsList)
             })
             )
