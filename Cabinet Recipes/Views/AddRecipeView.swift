@@ -8,18 +8,6 @@
 import SwiftUI
 import FirebaseFirestore
 
-// Extension for capitalizing the first letter
-// of each ingredient
-extension String {
-    func capitalizingFirstLetter() -> String {
-        return prefix(1).capitalized + dropFirst()
-    }
-
-    mutating func capitalizeFirstLetter() {
-        self = self.capitalizingFirstLetter()
-    }
-}
-
 struct AddRecipeView: View {
     @State private var recipeName = ""
     @State private var newIngredient = ""
