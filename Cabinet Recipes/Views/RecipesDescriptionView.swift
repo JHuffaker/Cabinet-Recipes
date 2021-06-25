@@ -31,6 +31,7 @@ struct RecipesDescriptionView: View {
         // Edit button
         .navigationBarItems(trailing: NavigationLink(destination: EditRecipeView(recipe: recipe)) {
                 Text("Edit")
+                .font(.body)
                 .foregroundColor(.blue)
             }
         )
