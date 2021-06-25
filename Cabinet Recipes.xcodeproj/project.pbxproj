@@ -20,6 +20,7 @@
 		B4917660266E71A500C223B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B491765F266E71A500C223B7 /* GoogleService-Info.plist */; };
 		B498B094267792BC00641FBA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B498B093267792BC00641FBA /* SettingsView.swift */; };
 		B498B096267794DC00641FBA /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B498B095267794DC00641FBA /* CardView.swift */; };
+		B4B7EEAF26866FF7009CB81B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B7EEAE26866FF7009CB81B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		B491765F266E71A500C223B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B498B093267792BC00641FBA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B498B095267794DC00641FBA /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		B4B7EEAE26866FF7009CB81B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				B44A8B96266C45BD00B32E2E /* EditRecipeView.swift */,
 				B44A8B90266B2CDF00B32E2E /* CircleImage.swift */,
 				B498B093267792BC00641FBA /* SettingsView.swift */,
+				B4B7EEAE26866FF7009CB81B /* Extensions.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				B44A8B91266B2CDF00B32E2E /* CircleImage.swift in Sources */,
 				B498B094267792BC00641FBA /* SettingsView.swift in Sources */,
 				B455DD3A26632C0B007174F0 /* RecipesData.swift in Sources */,
+				B4B7EEAF26866FF7009CB81B /* Extensions.swift in Sources */,
 				B455DD172661CFD7007174F0 /* RecipesListView.swift in Sources */,
 				B445BF46265D9D1600539A0B /* Cabinet_RecipesApp.swift in Sources */,
 				B44A8B97266C45BD00B32E2E /* EditRecipeView.swift in Sources */,
